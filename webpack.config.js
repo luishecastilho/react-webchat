@@ -12,7 +12,11 @@ module.exports = {
         rules: [
             {
                 test: /\.css$/,
-                use: ["style-loader", "css-loader"],
+                use: [
+                    "style-loader",
+                    "css-loader",
+                    "postcss-loader" // Add postcss-loader here
+                ],
             },
             {
                 test: /\.(png|svg|jpg|jpeg|gif)$/,
@@ -39,5 +43,5 @@ module.exports = {
     optimization: {
         minimize: true,
         minimizer: [new TerserPlugin()],
-    }
+    },
 };

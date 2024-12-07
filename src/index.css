@@ -15,16 +15,3 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-.chatbox {
-    position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 9999; /* Ensure it appears over other elements */
-  width: 300px; /* Adjust as needed */
-  height: 400px; /* Adjust as needed */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
-}
